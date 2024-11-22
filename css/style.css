@@ -2,8 +2,8 @@
   --primary-color: #13303f;
   --second-color: #d9dc2f;
   --third-color: #e3f4fc;
-  --DDD-color:#ddd;
-  --CCC-color:#ddd;
+  --DDD-color: #ddd;
+  --CCC-color: #ddd;
   --error-color: red;
 }
 
@@ -18,15 +18,29 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.box {
-  background-color: var(--primary-color);
-  box-shadow: 0 0 10px var(--DDD-color);
-  max-width: 450px;
-  border-radius: 6px 6px 100px 6px;
+.flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+/* ============================ Content ============================ */
+.wrapper {
+  padding: 15px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 470px;
+  max-width: 100%;
+}
+
+.box {
+  position: relative;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 10px var(--DDD-color);
+  width: 100%;
+  max-width: 100%;
+  border-radius: 6px 6px 100px 6px;
   padding: 30px 25px;
 }
 
@@ -116,4 +130,33 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
+}
+
+/* ============================= Media Query ============================= */
+@media (max-width: 510px) {
+  .wrapper {
+    width: 440px;
+  }
+  .box {
+    padding: 25px 20px;
+  }
+  .box .field {
+    flex-direction: column;
+  }
+  .box .field :is(div, input, .error) {
+    width: 100%;
+    max-width: 100%;
+  }
+  .box .field div {
+    margin-bottom: 10px;
+  }
+  .box .hr {
+    margin: 40px 0 30px;
+  }
+}
+
+@media (max-width: 321px) {
+  .box .birthday h1 {
+    font-size: 45px;
+  }
 }

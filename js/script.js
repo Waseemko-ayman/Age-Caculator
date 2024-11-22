@@ -1,3 +1,5 @@
+// ==================== Age Calculator Logic ===================== //
+
 let allInputs = document.querySelectorAll("input");
 let dayInput = document.getElementById("day");
 let monthInput = document.getElementById("month");

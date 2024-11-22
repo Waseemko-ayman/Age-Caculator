@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Awessome Library -->
-    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/all.min.css" />
     <!-- CSS File -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
     <!-- tab image -->
-    <link rel="shortcut icon" href="../assets/schedule.png">
+    <link rel="shortcut icon" href="../assets/schedule.png" />
     <title>Age Calculator</title>
   </head>
   <body>
-    <div class="box">
-      <div class="field">
-        <div>
-          <label for="day">DAY</label>
-          <input
-            type="number"
-            name="day"
-            id="day"
-            placeholder="Day"
-            min="1"
-            max="31"
-        >
-          <p class="error day-error"></p>
+    <!--============================== Content ==============================-->
+    <div class="wrapper">
+      <div class="box">
+        <div class="field">
+          <div>
+            <label for="day">DAY</label>
+            <input
+              type="number"
+              name="day"
+              id="day"
+              placeholder="Day"
+              min="1"
+              max="31"
+            />
+            <p class="error day-error"></p>
+          </div>
+          <div>
+            <label for="month">MONTH</label>
+            <input
+              type="number"
+              name="month"
+              id="month"
+              placeholder="Month"
+              min="1"
+              max="12"
+            />
+            <p class="error month-error"></p>
+          </div>
+          <div>
+            <label for="year">YEAR</label>
+            <input
+              type="number"
+              name="year"
+              id="year"
+              placeholder="Year"
+              min="1900"
+            />
+            <p class="error year-error"></p>
+          </div>
         </div>
-        <div>
-          <label for="month">MONTH</label>
-          <input
-            type="number"
-            name="month"
-            id="month"
-            placeholder="Month"
-            min="1"
-            max="12"
-        >
-          <p class="error month-error"></p>
+        <div class="hr">
+          <button type="submit" id="submit">
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
         </div>
-        <div>
-          <label for="year">YEAR</label>
-          <input
-            type="number"
-            name="year"
-            id="year"
-            placeholder="Year"
-            min="1900"
-        >
-          <p class="error year-error"></p>
+        <div class="birthday">
+          <h1 id="years"><span>--</span> years</h1>
+          <h1 id="months"><span>--</span> months</h1>
+          <h1 id="days"><span>--</span> days</h1>
         </div>
-      </div>
-      <div class="hr">
-        <button type="submit" id="submit">
-          <i class="fa-solid fa-angle-down"></i>
-        </button>
-      </div>
-      <div class="birthday">
-        <h1 id="years"><span>--</span> years</h1>
-        <h1 id="months"><span>--</span> months</h1>
-        <h1 id="days"><span>--</span> days</h1>
       </div>
     </div>
 
