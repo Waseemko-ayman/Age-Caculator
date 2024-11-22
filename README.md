@@ -29,7 +29,7 @@ This is a simple web-based age calculator that allows users to calculate their a
 ## **Installation**:
 Clone the repository to your local machine:
 ```bash
-git clone https://github.com/your-username/age-calculator.git
+git clone https://github.com/your-username/Age-Calculator.git
 ```
 Open `index.html` in your browser to use the calculator.
 
